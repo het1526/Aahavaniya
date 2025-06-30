@@ -1,0 +1,108 @@
+/* -------------- */
+/* Hero section */
+/* -------------- */
+.hero {
+  position: relative;
+  background-color: #fff2e6;
+  padding: 9.6rem 0;
+  height: calc(100vh - 9.6rem);
+  text-align: center;
+  overflow: hidden;
+}
+
+.sanskrit-quote {
+  font-size: 5.2rem;
+  color: #3e2a1a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.translation {
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  color: #3e2a1a;
+  margin-bottom: 6.4rem;
+  font-size: 2rem;
+}
+
+.tagline {
+  font-size: 2.4rem;
+  color: #2e2b29;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.hero-button {
+  background-color: #fa7907;
+  color: white;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem 1.2rem;
+  border-radius: 1rem;
+  font-family: "Anek Gurmukhi", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #c86106;
+  color: white;
+}
+
+/* Mandala */
+.mandala {
+  position: absolute;
+  opacity: 0.1;
+  z-index: 0;
+  transform-origin: center center;
+  animation: spin 60s linear infinite;
+}
+
+.mandala-left {
+  top: 180px;
+  left: -290px;
+  width: 600px;
+}
+
+.mandala-right {
+  bottom: 350px;
+  right: -150px;
+  width: 500px;
+}
+
+/* Hero content comes above mandalas */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Rotation keyframes */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------- */
+/* Featured Blogs Section */
+/* -------------- */
+
+.featured-blogs-section {
+  padding: 8rem 4rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 4.4rem;
+  color: #3e2a1a;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+/* just for the sake of margin, will change it later */
+.view-all-wrapper {
+  margin-top: 4.8rem;
+}

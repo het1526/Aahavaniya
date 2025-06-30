@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Anek Gurmukhi", sans-serif;
+  background-color: #fff2e6;
+}
+/* ------------- */
+/* Header */
+/* ------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff2e6;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  margin-top: 1rem;
+  height: 6rem;
+}
+
+/* Navigation */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 2.2rem;
+  font-weight: 600;
+
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fa7907;
+}
+
+/* ------------- */
+/* Footer */
+/* ------------- */
+
+.footer {
+  background-color: #cab17b;
+  color: #3e2a1a;
+  padding: 4rem 2rem 3.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.footer-content {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.footer-about {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #3e2a1a;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+.footer-social a {
+  font-size: 2.4rem;
+  color: #3e2a1a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #000;
+}
+
+.footer-copy {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+
+/* ------------- */
+/* View All links */
+/* ------------- */
+
+.view-all-link {
+  font-size: 1.6rem;
+  background-color: #fa7907;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem 1.2rem;
+  border-radius: 1rem;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.view-all-link:hover {
+  background-color: #c86106;
+}
+
+.view-all-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 3.5rem;
+  width: 0;
+  height: 0.2rem;
+  background-color: currentColor;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.view-all-link:hover::after {
+  width: 65%;
+}

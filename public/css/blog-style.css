@@ -1,0 +1,24 @@
+/* styles for Blog.html */
+
+.blog-page-header {
+  padding: 3.2rem 2.4rem;
+  text-align: center;
+  background-color: #fff2e6;
+}
+
+.blog-archive-title {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #3e2a1a;
+  margin-bottom: 1rem;
+}
+
+.blog-subtitle {
+  font-size: 2rem;
+  color: #5c4a3a;
+}
+
+.blog-grid-section {
+  padding: 4.8rem 6.4rem 8rem;
+  background-color: #fff2e6;
+}

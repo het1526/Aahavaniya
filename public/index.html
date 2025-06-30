@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aahavaniya</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/blog-card.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- ------------------ -->
+    <!-- Header -->
+    <!-- ------------------ -->
+    <header class="header">
+      <!-- logo -->
+      <a href="#">
+        <img class="logo" src="img/logo.png" alt="Aahavaniya logo" />
+      </a>
+      <!-- Navigation bar -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="index.html" class="main-nav-link">Home</a>
+          </li>
+          <li>
+            <a href="blog.html" class="main-nav-link">Blogs</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Categories</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ------------------ -->
+    <!-- Hero section as of trail and error -->
+    <!-- ------------------ -->
+    <section class="hero">
+      <!-- Mandala backgrounds -->
+      <img
+        src="img/mandala.svg"
+        alt="Mandala Left"
+        class="mandala mandala-left"
+      />
+      <img
+        src="img/mandala.svg"
+        alt="Mandala Right"
+        class="mandala mandala-right"
+      />
+      <div class="hero-content">
+        <h1 class="sanskrit-quote">“शिलायां जीवनम् अस्ति”</h1>
+        <p class="translation">(There is life in stone)</p>
+        <p class="tagline">
+          Aahavaniya explores the art, architecture & myths of ancient Indian
+          temples.
+        </p>
+        <a href="/blog.html" class="hero-button">Explore Blog</a>
+      </div>
+    </section>
+    <!-- ------------------ -->
+    <!-- Featured Blogs Section -->
+    <!-- ------------------ -->
+    <section class="featured-blogs-section">
+      <h2 class="section-title">Featured Temple Tales</h2>
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+          <img
+            src="img/one.jpg"
+            alt="Temple Image 1"
+            class="blog-image"
+            onclick="location.href='blog-post1.html'"
+          />
+          <h3 class="blog-title">The Chola Bronze: Dancing Nataraja</h3>
+          <div class="seperate-line"></div>
+          <p class="blog-snippet">
+            Discover the symbolism of Shiva’s cosmic dance and its connection
+            with South Indian bronze art.
+          </p>
+          <a href="blog-post1.html" class="read-more">Read More →</a>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <img
+            src="img/two.jpg"
+            alt="Temple Image 2"
+            class="blog-image"
+            onclick="location.href='blog-post2.html'"
+          />
+
+          <h3 class="blog-title">Secrets of the Gopuram</h3>
+          <div class="seperate-line"></div>
+          <p class="blog-snippet">
+            Unfolding the meanings behind towering Gopurams that define
+            Dravidian temples.
+          </p>
+          <a href="blog-post2.html" class="read-more">Read More →</a>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+          <img
+            src="img/three.jpg"
+            alt="Temple Image 3"
+            class="blog-image"
+            onclick="location.href='blog-post3.html'"
+          />
+          <h3 class="blog-title">Kalinga Temple Carvings</h3>
+          <div class="seperate-line"></div>
+          <p class="blog-snippet">
+            How Odishan temples narrate epic tales through intricate stone
+            storytelling.
+          </p>
+          <a href="blog-post3.html" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <div class="view-all-wrapper">
+        <a href="/blog.html" class="view-all-link">View All Blogs →</a>
+      </div>
+    </section>
+    <!-- --------------- -->
+    <!-- Footer -->
+    <!-- --------------- -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-about">
+          Aahavaniya is a project celebrating the spirit of ancient Indian
+          temples through stories, art, and architecture.
+        </p>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="footer-social">
+          <a
+            href="https://instagram.com/aahavaniya"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <ion-icon name="logo-instagram"> </ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer-copy">© 2025 Aahavaniya. All rights reserved.</p>
+    </footer>
+    <!-- ion-icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

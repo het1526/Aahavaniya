@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "nataraja",
+    "title": "The Chola Bronze: Dancing Nataraja",
+    "date": "2025-06-25",
+    "category": "Temple Art",
+    "image": "/img/one.jpg",
+    "snippet": "Discover the symbolism of Shiva’s cosmic dance...",
+    "content": [
+      "The bronze statue of Nataraja represents Shiva’s cosmic dance...",
+      "It merges aesthetics, devotion, and philosophical depth..."
+    ]
+  },
+  {
+    "slug": "gopuram",
+    "title": "Secrets of the Gopuram",
+    "date": "2025-06-25",
+    "category": "Architecture",
+    "image": "/img/two.jpg",
+    "snippet": "Unfolding the meanings behind towering Gopurams...",
+    "content": [
+      "Each Gopuram is crafted with sacred geometry and symbolism...",
+      "They act as spiritual beacons for pilgrims..."
+    ]
+  },
+  {
+    "slug": "harihara",
+    "title": "The divine combination",
+    "date": "2025-06-25",
+    "category": "Sculpture",
+    "image": "/img/three.jpg",
+    "snippet": "Shiva and Viishnu combined to create a form...",
+    "content": [
+      "Each Gopuram is crafted with sacred geometry and symbolism...",
+      "They act as spiritual beacons for pilgrims..."
+    ]
+  }
+]
