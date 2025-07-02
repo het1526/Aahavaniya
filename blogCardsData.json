@@ -1,0 +1,30 @@
+[
+  {
+    "title": "The Chola Bronze: Dancing Nataraja",
+    "route": "nataraja",
+    "image": "img/one.jpg",
+    "snippet": "Discover the symbolism of Shiva’s cosmic dance and its connection with South Indian bronze art.",
+    "featured": false
+  },
+  {
+    "title": "Secrets of the Gopuram",
+    "route": "gopuram",
+    "image": "img/two.jpg",
+    "snippet": "Unfolding the meanings behind towering Gopurams that define Dravidian temples.",
+    "featured": true
+  },
+  {
+    "title": "The Divine Combination",
+    "route": "harihara",
+    "image": "img/three.jpg",
+    "snippet": "The composite image of Shiva and Vishnu as seen in sculptures.",
+    "featured": true
+  },
+  {
+    "title": "Sun temple Modhera",
+    "route": "harihara",
+    "image": "img/two.jpg",
+    "snippet": "Abra ka dabra lorem ipsum ha la ye ha ndk jakdk nddkfkas kndvk ikkhnff .",
+    "featured": true
+  }
+]

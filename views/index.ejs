@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aahavaniya</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/blog-card.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header -->
+    <%- include ('partials/header') %>
+
+    <!-- ------------------ -->
+    <!-- Hero section -->
+    <!-- ------------------ -->
+    <section class="hero">
+      <!-- Mandala backgrounds -->
+      <img
+        src="img/mandala.svg"
+        alt="Mandala Left"
+        class="mandala mandala-left"
+      />
+      <img
+        src="img/mandala.svg"
+        alt="Mandala Right"
+        class="mandala mandala-right"
+      />
+      <div class="hero-content">
+        <h1 class="sanskrit-quote">“शिलायां जीवनम् अस्ति”</h1>
+        <p class="translation">(There is life in stone)</p>
+        <p class="tagline">
+          Aahavaniya explores the art, architecture & myths of ancient Indian
+          temples.
+        </p>
+        <a href="/blog" class="hero-button">Explore Blog</a>
+      </div>
+    </section>
+    <!-- ------------------ -->
+    <!-- Featured Blogs Section -->
+    <!-- ------------------ -->
+    <section class="featured-blogs-section">
+      <h2 class="section-title">Featured Temple Tales</h2>
+      <div class="blog-grid"><%- featuredCards %></div>
+
+      <div class="view-all-wrapper">
+        <a href="/blog" class="view-all-link">View All Blogs →</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <%- include ('partials/footer') %>
+
+    <!-- ion-icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
