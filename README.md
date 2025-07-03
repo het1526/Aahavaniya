@@ -70,7 +70,7 @@ aahavaniya/
    npm install
 
 3. **Start the development server**
-   node app.js
+   node server.js
 
 4. **Open your browser at**
    http://localhost:3000
