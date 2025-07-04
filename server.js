@@ -10,30 +10,16 @@ app.set("views", path.join(__dirname, "views")); // new views folder
 
 // Reading files
 const blogData = JSON.parse(fs.readFileSync("blogData.json", "utf-8"));
-const templateBlogPost = fs.readFileSync(
-  "public/blog-post-template.html",
-  "utf-8"
-);
+
 const blogCardData = JSON.parse(fs.readFileSync("blogCardsData.json", "utf-8"));
-const templateBlogCard = fs.readFileSync(
-  "public/blog-cards-template.html",
-  "utf-8"
-);
-const index = fs.readFileSync("public/index.html", "utf-8");
+
+const temples = JSON.parse(fs.readFileSync("templeMarkers.json"), "utf-8");
 
 // Get Blog Post
 app.get("/blog/:slug", (req, res) => {
   const blog = blogData.find((b) => b.slug === req.params.slug);
 
   if (!blog) return res.status(404).send("Blog not found");
-
-  // Inject into HTML template
-  // let html = templateBlogPost
-  //   .replace(/{{title}}/g, blog.title)
-  //   .replace("{{image}}", blog.image)
-  //   .replace("{{date}}", blog.date)
-  //   .replace("{{category}}", blog.category)
-  //   .replace("{{content}}", blog.content.map((p) => `<p>${p}</p>`).join(""));
 
   const content = blog.content.map((p) => `<p>${p}</p>`).join("");
 
@@ -88,6 +74,11 @@ app.get("/", (req, res) => {
     .join("");
 
   res.render("index", { featuredCards });
+});
+
+// GET temple-map
+app.get("/map", (req, res) => {
+  res.render("temple-map", { temples });
 });
 
 app.use(express.static("public"));
