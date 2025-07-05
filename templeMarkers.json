@@ -2,10 +2,101 @@
   {
     "name": "Sun Temple, Modhera",
     "dynasty": "Chaulukya",
-    "x": 112,
-    "y": 425,
+    "x": 108,
+    "y": 432,
     "age": "11th century CE",
-    "style": "Maru-Gurjara",
-    "location": "Modhera, Gujarat"
+    "style": "Māru-Gurjara",
+    "location": "Modhera, Gujarat",
+    "precision": true
+  },
+  {
+    "name": "Jagdish Temple",
+    "dynasty": "Sisodia (Mevāḍa)",
+    "x": 152,
+    "y": 400,
+    "age": "17th century CE",
+    "style": "Nāgara",
+    "location": "Udaipur, Rajasthan",
+    "precision": true
+  },
+  {
+    "name": "Khajuraho Kandariya Mahadeva",
+    "dynasty": "Candela",
+    "x": 320,
+    "y": 392,
+    "age": "11th century CE",
+    "style": "Nāgara",
+    "location": "Khajurāho, Madhya Pradesh",
+    "precision": false
+  },
+  {
+    "name": "Lakṣmaṇa Temple",
+    "dynasty": "Candela",
+    "x": 322,
+    "y": 393,
+    "age": "10th century CE",
+    "style": "Nāgara",
+    "location": "Khajurāho, Madhya Pradesh",
+    "precision": false
+  },
+  {
+    "name": "Konark Sun Temple",
+    "dynasty": "Gaṅga (Eastern Gaṅga)",
+    "x": 495,
+    "y": 533,
+    "age": "13th century CE",
+    "style": "Kāliṅga (Nāgara variant)",
+    "location": "Konark, Odisha",
+    "precision": true
+  },
+  {
+    "name": "Shore Temple",
+    "dynasty": "Pallava",
+    "x": 328,
+    "y": 747,
+    "age": "8th century CE",
+    "style": "Early Drāviḍa",
+    "location": "Mahabalipuram, Tamil Nadu",
+    "precision": true
+  },
+  {
+    "name": "Vīrabhadra Temple",
+    "dynasty": "Vijayanagara",
+    "x": 228,
+    "y": 672,
+    "age": "8th century CE",
+    "style": "Vijayanagara",
+    "location": "Hampi, Karnataka",
+    "precision": true
+  },
+  {
+    "name": "Chennakeśava Temple",
+    "dynasty": "Hoysala",
+    "x": 210,
+    "y": 735,
+    "age": "12th century CE",
+    "style": "Hoysala ",
+    "location": "Belūru, Karnāṭaka",
+    "precision": true
+  },
+  {
+    "name": "Vīrūpākṣa Temple",
+    "dynasty": "Cāḷukya (Bādāmi)",
+    "x": 230,
+    "y": 674,
+    "age": "8th century CE",
+    "style": "Vesara ",
+    "location": "Pattadakal, Karnāṭaka",
+    "precision": true
+  },
+  {
+    "name": "Lingarāja Temple",
+    "dynasty": "Somavaṁśī",
+    "x": 485,
+    "y": 526,
+    "age": "11th century CE",
+    "style": "Kāliṅga ",
+    "location": "Bhubaneśvara, Oḍiśā",
+    "precision": true
   }
 ]
