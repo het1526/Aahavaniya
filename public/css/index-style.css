@@ -91,18 +91,57 @@
 /* -------------- */
 
 .featured-blogs-section {
-  padding: 8rem 4rem;
+  padding: 6rem 4rem 8rem;
   background-color: #fff;
   text-align: center;
 }
 
 .section-title {
-  font-size: 4.4rem;
+  font-size: 4.8rem;
   color: #3e2a1a;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   font-weight: 700;
 }
 /* just for the sake of margin, will change it later */
 .view-all-wrapper {
   margin-top: 4.8rem;
+}
+
+/* -------------- */
+/* About Section */
+/* -------------- */
+.about-section {
+  background: #fff;
+  padding: 6rem 4rem;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.about-text h3 {
+  font-size: 3.2rem;
+  color: #2e2b29;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 2.4rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.about-image {
+  opacity: 0.75;
 }

@@ -98,5 +98,15 @@
     "style": "Kāliṅga ",
     "location": "Bhubaneśvara, Oḍiśā",
     "precision": true
+  },
+  {
+    "name": "Lakṣmaṇa Temple",
+    "dynasty": "Gupta",
+    "x": 279,
+    "y": 401,
+    "age": "5th century CE",
+    "style": "Early Nāgara",
+    "location": "Deogarh, Uttar Pradesh",
+    "precision": true
   }
 ]

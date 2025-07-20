@@ -81,6 +81,11 @@ app.get("/map", (req, res) => {
   res.render("temple-map", { temples });
 });
 
+// GET about
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
 app.use(express.static("public"));
 
 app.listen(PORT, () => {

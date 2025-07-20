@@ -39,11 +39,11 @@ svg#temple-map,
 /* Headings */
 .map-page-header {
   padding: 3.2rem 2.4rem 6.4rem;
-  text-align: center;
   background-color: #fff2e6;
 }
 
 .map-title {
+  text-align: center;
   font-size: 4.4rem;
   font-weight: 700;
   color: #3e2a1a;
@@ -51,8 +51,19 @@ svg#temple-map,
 }
 
 .map-subtitle {
+  padding: 2rem 6rem;
+  text-align: left;
   font-size: 2rem;
-  color: #5c4a3a;
+  color: #444;
+}
+
+.map-subtitle p {
+  line-height: 1.2;
+  padding: 1rem 0 0;
+}
+
+.margin-top {
+  margin-top: 3rem;
 }
 /* Floating Style */
 
