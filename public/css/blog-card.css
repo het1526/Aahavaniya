@@ -65,3 +65,64 @@
   text-decoration: underline;
   color: #c86106;
 }
+
+/* ============================== */
+/* 📱 Tablet screens and below    */
+/* ============================== */
+@media (max-width: 60em) {
+  .blog-grid {
+    gap: 3.2rem 2.4rem;
+  }
+
+  .blog-snippet {
+    font-size: 1.6rem;
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .read-more {
+    font-size: 1.3rem;
+  }
+
+  .blog-image {
+    height: 180px;
+  }
+}
+
+/* ============================== */
+/* 📱 Mobile screens              */
+/* ============================== */
+@media (max-width: 34em) {
+  .blog-grid {
+    gap: 2.4rem 1.6rem;
+  }
+
+  .blog-card {
+    max-width: 90%;
+    padding: 0 0 1.6rem;
+  }
+
+  .blog-title {
+    font-size: 1.6rem;
+  }
+
+  .blog-snippet {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .read-more {
+    font-size: 1.2rem;
+  }
+
+  .blog-image {
+    height: 160px;
+    margin-bottom: 2rem;
+  }
+
+  .seperate-line {
+    margin-bottom: 2rem;
+  }
+}

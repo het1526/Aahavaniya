@@ -22,3 +22,41 @@
   padding: 4.8rem 6.4rem 8rem;
   background-color: #fff2e6;
 }
+
+/* ============================== */
+/* 📱 Tablet screens and below    */
+/* ============================== */
+@media (max-width: 60em) {
+  .blog-archive-title {
+    font-size: 3.6rem;
+  }
+
+  .blog-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .blog-grid-section {
+    padding: 4rem 4rem 6.4rem;
+  }
+}
+
+/* ============================== */
+/* 📱 Mobile screens              */
+/* ============================== */
+@media (max-width: 34em) {
+  .blog-archive-title {
+    font-size: 3rem;
+  }
+
+  .blog-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .blog-page-header {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .blog-grid-section {
+    padding: 3.2rem 2rem 5.6rem;
+  }
+}

@@ -83,3 +83,84 @@ svg#temple-map,
 .hidden {
   display: none;
 }
+
+/* ============================== */
+/* 📱 Tablet screens and below    */
+/* ============================== */
+@media (max-width: 60em) {
+  .map-title {
+    font-size: 3.6rem;
+  }
+
+  .map-subtitle {
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+  }
+
+  .tooltip-box {
+    font-size: 0.9rem;
+    padding: 3.2rem 4.8rem;
+  }
+
+  #temple-info-card {
+    max-width: 20rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================== */
+/* 📱 Mobile screens              */
+/* ============================== */
+@media (max-width: 34em) {
+  .map-title {
+    font-size: 2.8rem;
+  }
+
+  .map-subtitle {
+    padding: 1.6rem 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .map-subtitle p {
+    line-height: 1.4;
+    padding-top: 1rem;
+  }
+
+  .svg-map-container {
+    padding: 1rem;
+  }
+
+  #temple-info-card {
+    font-size: 1.2rem;
+    padding: 0.6rem 0.8rem;
+    max-width: 18rem;
+  }
+
+  .tooltip-box {
+    font-size: 0.8rem;
+    padding: 2.4rem 3.2rem;
+  }
+}
+/* for text above map */
+
+/* By default, show desktop version */
+.map-subtitle-mobile {
+  display: none;
+}
+
+/* On small screens, show mobile text and hide long paragraphs */
+@media (max-width: 34em) {
+  .map-subtitle-desktop {
+    display: none;
+  }
+
+  .map-subtitle-mobile {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    line-height: 1.5;
+    color: #444;
+  }
+}
