@@ -237,3 +237,56 @@ body {
     padding: 1.2rem 2.4rem 1rem;
   }
 }
+
+/* Mobile Toggle button for nav-links */
+/* Base styles */
+.mobile-nav-toggle {
+  display: none;
+  font-size: 2.8rem;
+  background: none;
+  border: none;
+  color: #3e2a1a;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1001;
+}
+
+/* Mobile styles */
+@media (max-width: 44em) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .main-nav-list {
+    display: none;
+    position: absolute;
+    top: 6.4rem;
+    right: 2rem;
+    background: #fffaf2;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2rem;
+    z-index: 1000;
+    min-width: 16rem;
+    width: max-content;
+  }
+
+  .main-nav-list.show {
+    display: flex;
+  }
+
+  .main-nav-list li {
+    text-align: right;
+    width: 100%;
+  }
+
+  .main-nav-link {
+    display: block;
+    padding: 0.8rem 1.2rem;
+  }
+}
