@@ -322,6 +322,28 @@ input[type="file"] {
   .about-text p {
     font-size: 2rem;
   }
+
+  .feedback-container {
+    flex-direction: column;
+    margin: 0 2.4rem; /* reduce side margins */
+  }
+
+  .feedback-form {
+    padding: 3.2rem 2.4rem;
+  }
+
+  .feedback-image {
+    order: 2;
+    width: 100%;
+    height: auto;
+  }
+
+  .feedback-image img {
+    width: 70%;
+    height: auto;
+    padding: 0 0 0 8rem;
+    object-fit: cover;
+  }
 }
 /* Responsive for form*/
 @media (max-width: 48em) {
@@ -395,5 +417,39 @@ input[type="file"] {
 
   .about-text p {
     font-size: 1.8rem;
+  }
+
+  .feedback-section {
+    padding: 0 0 2.4rem;
+  }
+
+  .flex-box {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .feedback-form h2 {
+    font-size: 2.8rem;
+  }
+
+  .feedback-form p {
+    font-size: 1.4rem;
+  }
+
+  .form-group label {
+    font-size: 1.4rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1.5rem;
+    padding: 1rem 1.6rem;
+    width: 100%;
   }
 }
