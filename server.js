@@ -23,6 +23,11 @@ app.use("/suggest", suggestRouter);
 app.use("/", homeRouter);
 app.use("/map", mapRouter);
 
+// 404 page not found
+app.use((req, res) => {
+  res.status(404).render("404");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });

@@ -152,9 +152,34 @@ body {
 .view-all-link:hover::after {
   width: 65%;
 }
+/* ============================== */
+/* 404 error page              */
+/* ============================== */
+
+.not-found {
+  margin-top: 4.8rem;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.not-found h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.not-found .home-link {
+  font-size: 1.6rem;
+  color: #0077cc;
+  text-decoration: underline;
+}
 
 /* ============================== */
-/* 📱 Tablet screens and below    */
+/* Tablet screens and below    */
 /* ============================== */
 @media (max-width: 60em) {
   .header {
@@ -187,7 +212,7 @@ body {
 }
 
 /* ============================== */
-/* 📱 Mobile screens              */
+/*  Mobile screens              */
 /* ============================== */
 @media (max-width: 34em) {
   .header {
