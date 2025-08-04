@@ -1,173 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aahavaniya</title>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap"
-      rel="stylesheet"
+<!-- Header -->
+<%- include('partials/header', { title: 'Aahavaniya', stylesheets: [
+'/css/index-style.css', '/css/blog-card.css'] }) %>
+
+<!-- Hero section -->
+<main>
+  <section class="hero">
+    <!-- Mandala backgrounds -->
+    <img
+      src="img/mandala.svg"
+      alt="Mandala Left"
+      class="mandala mandala-left"
     />
+    <img
+      src="img/mandala.svg"
+      alt="Mandala Right"
+      class="mandala mandala-right"
+    />
+    <div class="hero-content">
+      <h1 class="sanskrit-quote">“शिलायां जीवनम् अस्ति”</h1>
+      <p class="translation">(There is life in stone)</p>
+      <p class="tagline">
+        Aahavaniya explores the art, architecture & myths of ancient Indian
+        temples.
+      </p>
+      <a href="/blog" class="hero-button">Explore Blog</a>
+    </div>
+  </section>
 
-    <!-- CSS links -->
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/index-style.css" />
-    <link rel="stylesheet" href="css/blog-card.css" />
+  <!-- Featured Blogs Section -->
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
-  </head>
-  <body>
-    <!-- Header -->
-    <%- include ('partials/header') %>
+  <section class="featured-blogs-section">
+    <h2 class="section-title margin-bottom">Featured Temple Tales</h2>
+    <div class="blog-grid"><%- featuredCards %></div>
 
-    <!-- Hero section -->
+    <div class="view-all-wrapper">
+      <a href="/blog" class="view-all-link">View All Blogs →</a>
+    </div>
+  </section>
 
-    <section class="hero">
-      <!-- Mandala backgrounds -->
-      <img
-        src="img/mandala.svg"
-        alt="Mandala Left"
-        class="mandala mandala-left"
-      />
-      <img
-        src="img/mandala.svg"
-        alt="Mandala Right"
-        class="mandala mandala-right"
-      />
-      <div class="hero-content">
-        <h1 class="sanskrit-quote">“शिलायां जीवनम् अस्ति”</h1>
-        <p class="translation">(There is life in stone)</p>
-        <p class="tagline">
-          Aahavaniya explores the art, architecture & myths of ancient Indian
-          temples.
-        </p>
-        <a href="/blog" class="hero-button">Explore Blog</a>
-      </div>
-    </section>
+  <!-- About Section -->
 
-    <!-- Featured Blogs Section -->
-
-    <section class="featured-blogs-section">
-      <h2 class="section-title margin-bottom">Featured Temple Tales</h2>
-      <div class="blog-grid"><%- featuredCards %></div>
-
-      <div class="view-all-wrapper">
-        <a href="/blog" class="view-all-link">View All Blogs →</a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section class="about-section" id="about">
-      <div class="about-container">
-        <h2 class="section-title">About Aahavaniya</h2>
-        <div class="about-content">
-          <div class="about-image">
-            <img src="/img/yali.svg" alt="temple pillar section" />
-          </div>
-          <div class="about-text">
-            <h3>Preserving Sacred Heritage</h3>
-            <p>
-              Aahavaniya is dedicated to celebrating and preserving the rich
-              architectural and spiritual heritage of ancient Indian temples.
-              Our mission is to bring the stories, legends, and artistic marvels
-              of these sacred spaces to a global audience.
-            </p>
-            <p>
-              Through detailed exploration of temple architecture, intricate
-              sculptures, divine carvings, and timeless tales, we aim to foster
-              a deeper appreciation for India's spiritual and cultural legacy.
-            </p>
-            <p>
-              Join us on this sacred journey as we uncover the mysteries and
-              magnificence of India's temple heritage, one story at a time.
-            </p>
-          </div>
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <h2 class="section-title">About Aahavaniya</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/img/yali.svg" alt="temple pillar section" />
+        </div>
+        <div class="about-text">
+          <h3>Preserving Sacred Heritage</h3>
+          <p>
+            Aahavaniya is dedicated to celebrating and preserving the rich
+            architectural and spiritual heritage of ancient Indian temples. Our
+            mission is to bring the stories, legends, and artistic marvels of
+            these sacred spaces to a global audience.
+          </p>
+          <p>
+            Through detailed exploration of temple architecture, intricate
+            sculptures, divine carvings, and timeless tales, we aim to foster a
+            deeper appreciation for India's spiritual and cultural legacy.
+          </p>
+          <p>
+            Join us on this sacred journey as we uncover the mysteries and
+            magnificence of India's temple heritage, one story at a time.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Form submission -->
-    <section class="feedback-section" id="feedback">
-      <div class="feedback-container">
-        <!-- LEFT: Form Section -->
-        <div class="feedback-form">
-          <h2>Share with Aahavaniya</h2>
-          <p>
-            Have a temple to share, a carving you want to know more about, or a
-            correction to suggest?
-          </p>
+  <!-- Form submission -->
+  <section class="feedback-section" id="feedback">
+    <div class="feedback-container">
+      <!-- LEFT: Form Section -->
+      <div class="feedback-form">
+        <h2>Share with Aahavaniya</h2>
+        <p>
+          Have a temple to share, a carving you want to know more about, or a
+          correction to suggest?
+        </p>
 
-          <form action="/suggest" method="POST" enctype="multipart/form-data">
-            <div class="flex-box">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-            </div>
-
-            <div class="flex-box">
-              <div class="form-group">
-                <label for="reason">Reason for Reaching Out</label>
-                <select id="reason" name="reason" required>
-                  <option value="">-- Please select --</option>
-                  <option value="submit-temple">
-                    Submit a lesser-known temple
-                  </option>
-                  <option value="suggest-edit">Suggest an edit</option>
-                  <option value="ask-carving">Ask about a carving</option>
-                </select>
-              </div>
-              <div
-                class="form-group"
-                id="temple-location-field"
-                style="display: none"
-              >
-                <label for="templeLocation">Temple Location</label>
-                <input type="text" id="templeLocation" name="templeLocation" />
-              </div>
-              <div
-                class="form-group"
-                id="image-upload-field"
-                style="display: none"
-              >
-                <label for="image">Upload an Image (Optional)</label>
-                <input type="file" id="image" name="image" accept="image/*" />
-              </div>
+        <form action="/suggest" method="POST" enctype="multipart/form-data">
+          <div class="flex-box">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
             </div>
 
             <div class="form-group">
-              <label for="message">Message / Description</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
             </div>
+          </div>
 
-            <button type="submit" class="submit-btn">Submit</button>
-          </form>
-        </div>
+          <div class="flex-box">
+            <div class="form-group">
+              <label for="reason">Reason for Reaching Out</label>
+              <select id="reason" name="reason" required>
+                <option value="">-- Please select --</option>
+                <option value="submit-temple">
+                  Submit a lesser-known temple
+                </option>
+                <option value="suggest-edit">Suggest an edit</option>
+                <option value="ask-carving">Ask about a carving</option>
+              </select>
+            </div>
+            <div
+              class="form-group"
+              id="temple-location-field"
+              style="display: none"
+            >
+              <label for="templeLocation">Temple Location</label>
+              <input type="text" id="templeLocation" name="templeLocation" />
+            </div>
+            <div
+              class="form-group"
+              id="image-upload-field"
+              style="display: none"
+            >
+              <label for="image">Upload an Image (Optional)</label>
+              <input type="file" id="image" name="image" accept="image/*" />
+            </div>
+          </div>
 
-        <!-- RIGHT: Sculpture Image -->
-        <div class="feedback-image">
-          <img src="img/form-img.png" alt="Sculpture image" />
-        </div>
+          <div class="form-group">
+            <label for="message">Message / Description</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
       </div>
-    </section>
 
-    <!-- Footer -->
+      <!-- RIGHT: Sculpture Image -->
+      <div class="feedback-image">
+        <img src="img/form-img.png" alt="Sculpture image" />
+      </div>
+    </div>
+  </section>
+</main>
 
-    <%- include ('partials/footer') %>
-  </body>
-</html>
+<!-- Footer -->
+
+<%- include ('partials/footer') %>

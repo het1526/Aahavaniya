@@ -1,43 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogs | Aahavaniya</title>
+<!-- header -->
+<%- include ('partials/header', { title: 'Blogs | Aahavaniya', stylesheets: [
+'/css/blog-style.css', '/css/blog-card.css'] }) %>
+<!-- Blog Page Title -->
+<section class="blog-page-header">
+  <h1 class="blog-archive-title">Temple Blog Archive</h1>
+  <p class="blog-subtitle">
+    Explore stories, art, and symbols of India’s ancient temples.
+  </p>
+</section>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
+<!-- Cardsss -->
 
-    <!-- CSS links -->
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/blog-style.css" />
-    <link rel="stylesheet" href="css/blog-card.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <%- include ('partials/header') %>
-    <!-- Blog Page Title -->
-    <section class="blog-page-header">
-      <h1 class="blog-archive-title">Temple Blog Archive</h1>
-      <p class="blog-subtitle">
-        Explore stories, art, and symbols of India’s ancient temples.
-      </p>
-    </section>
+<main>
+  <section class="blog-grid-section">
+    <div class="blog-grid"><%- blogCards %></div>
+  </section>
+</main>
 
-    <!-- Cardsss -->
-
-    <main>
-      <section class="blog-grid-section">
-        <div class="blog-grid"><%- blogCards %></div>
-      </section>
-    </main>
-
-    <!-- footer -->
-    <%- include ('partials/footer') %>
-  </body>
-</html>
+<!-- footer -->
+<%- include ('partials/footer') %>

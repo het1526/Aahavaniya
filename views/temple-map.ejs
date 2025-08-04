@@ -1,94 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temple Map | Aahavaniya</title>
+<%- include('partials/header', { title: 'Temple Map | Aahavaniya', stylesheets:
+[ '/css/map.css'] }) %>
 
-    <!-- Fonts & Styles -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/map.css" />
-  </head>
-
-  <body>
-    <%- include('partials/header') %>
-
-    <main class="map-page">
-      <section class="map-page-header">
-        <h1 class="map-title">Temple Map of India</h1>
-        <div class="map-subtitle">
-          <div class="map-subtitle-desktop">
-            <p>
-              The map highlights temples that shaped India's spiritual heritage.
-              These ancient structures are not just places of worship, but
-              living testaments to the artistic, cultural, and architectural
-              brilliance of past civilizations.
-            </p>
-            <p>
-              Use this map to explore their stories, locate them geographically,
-              and better understand the spiritual geography of India.
-            </p>
-          </div>
-          <p class="map-subtitle-mobile">
-            Explore India's sacred legacy through temple markers — a map of
-            devotion, art, and history.
-          </p>
-        </div>
-      </section>
-
-      <div class="svg-map-container">
-        <svg
-          width="801"
-          height="910"
-          viewBox="0 0 801 910"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <%- include('partials/india-map') %>
-
-          <!-- TEMPLE MARKERS -->
-          <% temples.forEach(temple => { %>
-          <g
-            class="temple-marker"
-            transform="translate(<%= temple.x %>, <%= temple.y %>)"
-            data-name="<%= temple.name %>"
-            data-dynasty="<%= temple.dynasty %>"
-            data-age="<%= temple.age %>"
-            data-style="<%= temple.style %>"
-            data-location="<%= temple.location %>"
-          >
-            <circle r="4.5" fill="#e63946" />
-          </g>
-
-          <% }) %>
-        </svg>
-        <div id="temple-info-card" class="hidden">
-          <h3 id="temple-name"></h3>
-          <p><strong>Dynasty:</strong> <span id="temple-dynasty"></span></p>
-          <p><strong>Period:</strong> <span id="temple-age"></span></p>
-          <p><strong>Architecture:</strong> <span id="temple-style"></span></p>
-          <p><strong>Location:</strong> <span id="temple-location"></span></p>
-        </div>
-      </div>
-      <div class="map-subtitle margin-top">
+<main class="map-page">
+  <section class="map-page-header">
+    <h1 class="map-title">Temple Map of India</h1>
+    <div class="map-subtitle">
+      <div class="map-subtitle-desktop">
         <p>
-          Every dot on this map marks more than a location — it marks a legacy.
-          As you explore, consider how these temples once echoed with rituals,
-          stories, and communities that shaped the soul of India.
+          The map highlights temples that shaped India's spiritual heritage.
+          These ancient structures are not just places of worship, but living
+          testaments to the artistic, cultural, and architectural brilliance of
+          past civilizations.
         </p>
         <p>
-          One of the aims of Project Aahavaniya is to spark curiosity for
-          ancient temples and inspire people to visit and connect with their
-          heritage.
+          Use this map to explore their stories, locate them geographically, and
+          better understand the spiritual geography of India.
         </p>
       </div>
-    </main>
+      <p class="map-subtitle-mobile">
+        Explore India's sacred legacy through temple markers — a map of
+        devotion, art, and history.
+      </p>
+    </div>
+  </section>
 
-    <%- include('partials/footer') %>
-    <script src="/js/temple-map.js"></script>
-  </body>
-</html>
+  <div class="svg-map-container">
+    <svg
+      width="801"
+      height="910"
+      viewBox="0 0 801 910"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <%- include('partials/india-map') %>
+
+      <!-- TEMPLE MARKERS -->
+      <% temples.forEach(temple => { %>
+      <g
+        class="temple-marker"
+        transform="translate(<%= temple.x %>, <%= temple.y %>)"
+        data-name="<%= temple.name %>"
+        data-dynasty="<%= temple.dynasty %>"
+        data-age="<%= temple.age %>"
+        data-style="<%= temple.style %>"
+        data-location="<%= temple.location %>"
+      >
+        <circle r="4.5" fill="#e63946" />
+      </g>
+
+      <% }) %>
+    </svg>
+    <div id="temple-info-card" class="hidden">
+      <h3 id="temple-name"></h3>
+      <p><strong>Dynasty:</strong> <span id="temple-dynasty"></span></p>
+      <p><strong>Period:</strong> <span id="temple-age"></span></p>
+      <p><strong>Architecture:</strong> <span id="temple-style"></span></p>
+      <p><strong>Location:</strong> <span id="temple-location"></span></p>
+    </div>
+  </div>
+  <div class="map-subtitle margin-top">
+    <p>
+      Every dot on this map marks more than a location — it marks a legacy. As
+      you explore, consider how these temples once echoed with rituals, stories,
+      and communities that shaped the soul of India.
+    </p>
+    <p>
+      One of the aims of Project Aahavaniya is to spark curiosity for ancient
+      temples and inspire people to visit and connect with their heritage.
+    </p>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
