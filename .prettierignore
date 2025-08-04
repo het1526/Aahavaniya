@@ -1,0 +1,3 @@
+# Ignore EJS layout files
+views/partials/header.ejs
+views/partials/footer.ejs
