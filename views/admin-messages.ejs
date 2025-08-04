@@ -1,0 +1,17 @@
+<%- include('partials/header', { title: 'Admin | Messages', stylesheets: [] })
+%>
+
+<main class="admin-page">
+  <h1>Admin – Messages</h1>
+
+  <ul>
+    <% suggestions.forEach(s => { %>
+    <li>
+      <strong><%= s.name %></strong>: <%= s.message %><br />
+      <small>Email: <%= s.email %></small>
+    </li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('partials/footer') %>

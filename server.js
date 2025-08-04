@@ -5,6 +5,7 @@ const blogRouter = require("./routes/blogRoutes");
 const suggestRouter = require("./routes/suggestRoutes");
 const homeRouter = require("./routes/homeRoutes");
 const mapRouter = require("./routes/mapRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,6 +23,7 @@ app.use("/blog", blogRouter);
 app.use("/suggest", suggestRouter);
 app.use("/", homeRouter);
 app.use("/map", mapRouter);
+app.use("/admin", adminRoutes);
 
 // 404 page not found
 app.use((req, res) => {

@@ -1,0 +1,16 @@
+<%- include('partials/header', {title: 'Admin | Temples', stylesheets: [] }) %>
+
+<main class="admin-page">
+  <h1>Admin – Temple Blog Cards</h1>
+
+  <ul>
+    <% blogCards.forEach(post => { %>
+    <li>
+      <strong><%= post.title %></strong> – <%= post.date %><br />
+      <em><%= post.description %></em>
+    </li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('partials/footer') %>
