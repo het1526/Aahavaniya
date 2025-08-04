@@ -11,6 +11,15 @@ html {
 body {
   font-family: "Anek Gurmukhi", sans-serif;
   background-color: #fff2e6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 /* ------------- */
 /* Header */
@@ -178,6 +187,36 @@ body {
   text-decoration: underline;
 }
 
+/* ============================== */
+/* admin pages   */
+/* ============================== */
+
+.admin-page {
+  padding: 4rem 2rem;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.admin-page h1 {
+  margin-bottom: 2rem;
+}
+
+.admin-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-page li {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: #f7f7f7;
+  border-left: 4px solid #0077cc;
+}
+
+/* Ensure footer sticks at the bottom */
+main {
+  flex: 1;
+}
 /* ============================== */
 /* Tablet screens and below    */
 /* ============================== */
