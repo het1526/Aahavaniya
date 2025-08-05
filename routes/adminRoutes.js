@@ -4,12 +4,13 @@ const path = require("path");
 
 const router = express.Router();
 
-const suggestionsPath = path.join(__dirname, "../data/suggestions.json");
-const blogCardsPath = path.join(__dirname, "../data/blogCardsData.json");
-
 // reading files
-const suggestions = JSON.parse(fs.readFileSync(suggestionsPath, "utf-8"));
-const blogCards = JSON.parse(fs.readFileSync(blogCardsPath, "utf-8"));
+const suggestions = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../data/suggestions.json"), "utf-8")
+);
+const blogCards = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../data/blogCardsData.json"), "utf-8")
+);
 
 router.get("/messages", (req, res) => {
   res.status(200).render("admin-messages", { suggestions });
