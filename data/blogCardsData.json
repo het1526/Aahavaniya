@@ -14,17 +14,17 @@
     "featured": true
   },
   {
-    "title": "The Divine Combination",
-    "route": "harihara",
+    "title": "Khajuraho Temple",
+    "route": "khajuraho",
     "image": "img/three.jpg",
-    "snippet": "The composite image of Shiva and Vishnu as seen in sculptures.",
+    "snippet": "The Stone Symphony of the Divine and the Human",
     "featured": true
   },
   {
-    "title": "Sun temple Modhera",
-    "route": "harihara",
-    "image": "img/two.jpg",
-    "snippet": "Abra ka dabra lorem ipsum ha la ye ha ndk jakdk nddkfkas kndvk ikkhnff .",
+    "title": "The Sun Temple of Modhera",
+    "route": "modhera",
+    "image": "img/four.jpg",
+    "snippet": "Journey to Modhera, the temple of the Sun God.",
     "featured": true
   }
 ]
